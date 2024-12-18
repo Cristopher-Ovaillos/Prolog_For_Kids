@@ -9,12 +9,12 @@ body {
   scroll-behavior: smooth;
 }
 
-.hero {
+.cara_pagina {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #c1e24a, #9ee350);
+  background: linear-gradient(135deg, #e29b4a, #d9e350);
   position: relative;
   overflow: hidden;
 }
@@ -64,35 +64,35 @@ p {
   color: #666;
 }
 
-/* Clase para activar la animación */
+
 .logo {
   display: inline-block;
   font-size: 50px;
   animation: float 3s infinite ease-in-out;
 }
 
-/* Definición de la animación */
+
 @keyframes float {
   0% {
-      transform: translate(0, 0); /* Posición inicial */
+      transform: translate(0, 0); 
   }
   25% {
-      transform: translate(-10px, -10px); /* Hacia arriba a la izquierda */
+      transform: translate(-10px, -10px); 
   }
   50% {
-      transform: translate(10px, -10px); /* Hacia arriba a la derecha */
+      transform: translate(10px, -10px);
   }
   75% {
-      transform: translate(-10px, 10px); /* Hacia abajo a la izquierda */
+      transform: translate(-10px, 10px);
   }
   100% {
-      transform: translate(0, 0); /* Regresa a la posición inicial */
+      transform: translate(0, 0); 
   }
 }
 
 
 
-/*Para moviles*/
+
 @media (max-width: 768px) {
   .logo {
     width: 70vw;

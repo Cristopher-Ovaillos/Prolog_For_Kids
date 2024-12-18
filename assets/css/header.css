@@ -1,0 +1,42 @@
+
+.header {
+    position: absolute;
+   top: 20px; /* Esquina inferior */
+    right: 20px;   /* Esquina izquierda */
+    z-index: 10;
+  }
+  
+  .header nav {
+    display: flex;
+    flex-direction:unset;
+    gap: 10px;
+  }
+  
+  .header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .header nav a:hover {
+    background-color: #e29b4a;
+  }
+  
+
+  @media (max-width: 768px) {
+    .header {
+      bottom: 10px;
+      left: 10px;
+    }
+  
+    .header nav a {
+      font-size: 0.9rem;
+      padding: 5px 8px;
+    }
+  }
+  
