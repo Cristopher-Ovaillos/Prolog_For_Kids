@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #c1e24a, #9ee350);
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-container {
+  animation: logo-animation 2s ease-in-out;
+}
+
+.logo {
+  width: 100vw;
+  max-width: 700px;
+  height: auto;
+}
+
+@keyframes logo-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.content {
+  min-height: 100vh;
+  background: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Clase para activar la animación */
+.logo {
+  display: inline-block;
+  font-size: 50px;
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Definición de la animación */
+@keyframes float {
+  0% {
+      transform: translate(0, 0); /* Posición inicial */
+  }
+  25% {
+      transform: translate(-10px, -10px); /* Hacia arriba a la izquierda */
+  }
+  50% {
+      transform: translate(10px, -10px); /* Hacia arriba a la derecha */
+  }
+  75% {
+      transform: translate(-10px, 10px); /* Hacia abajo a la izquierda */
+  }
+  100% {
+      transform: translate(0, 0); /* Regresa a la posición inicial */
+  }
+}
+
+
+
+/*Para moviles*/
+@media (max-width: 768px) {
+  .logo {
+    width: 70vw;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
