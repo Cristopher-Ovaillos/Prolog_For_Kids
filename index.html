@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logo Animation Page</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="stylesheet" href="/assets/css/header.css">
+  <title>gilia</title>
+  <link rel="stylesheet" href="/assets/css/GILIA/styles.css">
 </head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <nav>
-      <a href="#Inicio">Inicio</a>
-      <a href="#About">¿Qué es Prolog for Kids?</a>
-      <a href="#Herramientas">Aprende con Blockly Prolog</a>
-      <a href="#Encuetros">Nuestros Encuentros</a>
-      <a href="#Galeria">Galería</a>
-      <a href="#Contacto">Contacto</a>
-    </nav>
-  </header>
 
-  <section class="cara_pagina">
-    <div class="logo-container">
-      <img src="/assets/images/LOGO_PFK.webp" alt="Prolog for Kids Logo" class="logo">
+<body>
+  <div class="gilia">
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="/assets/images/logo_IAV2.webp" alt="Logo" class="logo">
+        <p class="logo-text">GILIA</p>
+
+      </div>
+
+
+      <nav>
+        <ul>
+          <li class="active" onclick="navigateTo('Bienvenida')">
+            <a href="#">Bienvenida</a>
+          </li>
+          <li onclick="navigateTo('Objetivos')">
+            <a href="#">Objetivos</a>
+          </li>
+          <li onclick="navigateTo('Vision')">
+            <a href="#">Vision</a>
+          </li>
+          <li onclick="navigateTo('Quienes somos')">
+            <a href="#">¿Quienes somos?</a>
+          </li>
+          <li onclick="navigateTo('Materiales')">
+            <a href="#">Materiales</a>
+          </li>
+          <li onclick="navigateTo('Narrativas')">
+            <a href="#">Narrativas</a>
+          </li>
+          <li onclick="navigateTo('Proyectos')">
+            <a href="#">Proyectos</a>
+          </li>
+          <li onclick="navigateTo('Publicaciones')">
+            <a href="#">Publicaciones</a>
+          </li>
+
+        </ul>
+      </nav>
+
     </div>
-  </section>
+
+    <div class="main-content">
+      <div class="header">
+        <p>Grupo de Investigación en Lenguajes e Inteligencia Artiﬁcial</p>
+        <input type="text" class="search-bar" placeholder="Search...">
+       
+      </div>
+      <div id="content">
+        <h1>Welcome to the Dashboard</h1>
+      </div>
+    </div>
+  </div>
+  <script src="/assets/js/GILIA/script.js"></script>
 </body>
+
 </html>
