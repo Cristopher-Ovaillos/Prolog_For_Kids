@@ -1,11 +1,11 @@
-/* Asegurarse de que el contenedor ocupe el 100% del alto disponible */
+
 .content {
   margin-left: 20px;
   margin-right: 20px;
   padding: 20px;
   background-color: #fff;
-  height: calc(100vh - 40px); /* Asegura que el contenido ocupe toda la altura disponible, restando los márgenes */
-  overflow-y: auto; /* Permite desplazamiento cuando el contenido es mayor que el contenedor */
+  height: calc(100vh - 40px); 
+  overflow-y: auto; 
 }
 
 h2 {

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Acordeón</title>
+
+  <link rel="stylesheet" href="/assets/js/GILIA/data.json">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav li {
+      margin: 10px 0;
+      cursor: pointer;
+    }
+    nav li a {
+      text-decoration: none;
+      color: #333;
+    }
+    .content {
+      display: none;
+      padding: 10px 15px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      margin-top: 5px;
+    }
+    .active .content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li onclick="toggleSection(this)">
+        <a href="#">¿Quiénes somos?</a>
+        <div class="content">
+          <p>GILIA: Grupo de Investigación en Lenguajes e Inteligencia Artificial</p>
+          <p>Resolución Consejo Directivo FAIF N° 052/10</p>
+        </div>
+      </li>
+      <li onclick="toggleSection(this)">
+        <a href="#">Equipo de Trabajo</a>
+        <div class="content">
+          <h3>Directora</h3>
+          <p>Dra. Laura Cecchi</p>
+          <h3>Co-Directora</h3>
+          <p>Lic. Sandra Roger</p>
+          <h3>Docentes Investigadores</h3>
+          <ul>
+            <li>Mg. Gerardo Parra</li>
+            <li>Mg. Claudio Vaucheret</li>
+            <li>Ing. Rodolfo Del Castillo</li>
+            <li>Lic. Daniel Dolz</li>
+            <li>Lic. Pablo Kogan</li>
+            <li>Lic. Mario Moya</li>
+            <li>Lic. Maximiliano Klemen</li>
+            <li>Lic. María Laura Pino</li>
+            <li>Lic. Guillermo Torres</li>
+          </ul>
+          <h3>Becario de Doctorado CONICET</h3>
+          <p>Lic. Germán Braun</p>
+          <h3>Integrantes</h3>
+          <ul>
+            <li>Lic. Daniel Trevisani</li>
+            <li>AC. Jael Yañez</li>
+            <li>AC. Patricio Biondelli</li>
+            <li>AC. Diego Giuliani</li>
+            <li>AC. Andrea Vicente</li>
+            <li>AC. Fernando Buccella</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    function toggleSection(element) {
+      // Cierra todos los demás elementos activos
+      document.querySelectorAll('nav li').forEach(li => {
+        if (li !== element) li.classList.remove('active');
+      });
+      // Activa o desactiva el elemento clicado
+      element.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
