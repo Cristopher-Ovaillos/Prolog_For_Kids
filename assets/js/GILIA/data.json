@@ -1,0 +1,52 @@
+{
+    "bienvenida": {
+      "titulo": "Bienvenida",
+      "contenido": "Bienvenidos a GILIA: Grupo de Investigación en Lenguajes e Inteligencia Artificial."
+    },
+    "quienesSomos": {
+      "descripcion": "GILIA: Grupo de Investigación en Lenguajes e Inteligencia Artificial. Resolución Consejo Directivo FAIF N° 052/10.",
+      "directores": [
+        { "nombre": "Dra. Laura Cecchi", "avatar": "", "linkedin": "https://www.linkedin.com" },
+        { "nombre": "Lic. Sandra Roger", "avatar": "/assets/images/default-profile.webp", "linkedin": "https://www.linkedin.com" }
+      ],
+      "docentesInvestigadores": [
+        { "nombre": "Mg. Gerardo Parra", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "Mg. Claudio Vaucheret", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "Ing. Rodolfo Del Castillo", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "Lic. Daniel Dolz", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "Lic. Pablo Kogan", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "Lic. Mario Moya", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "Lic. Maximiliano Klemen", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "Lic. María Laura Pino", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "Lic. Guillermo Torres", "avatar": "/assets/images/default-profile.webp" }
+      ],
+      "becarios": [
+        { "nombre": "Lic. Germán Braun", "avatar": "/assets/images/default-profile.webp" }
+      ],
+      "integrantes": [
+        { "nombre": "Lic. Daniel Trevisani", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "AC. Jael Yañez", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "AC. Patricio Biondelli", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "AC. Diego Giuliani", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "AC. Andrea Vicente", "avatar": "/assets/images/default-profile.webp" },
+        { "nombre": "AC. Fernando Buccella", "avatar": "/assets/images/default-profile.webp" }
+      ],
+      "proyectos": [
+        {
+          "codigo": "04/F006",
+          "titulo": "Agentes inteligentes en ambientes dinámicos",
+          "periodo": "2013-2016",
+          "descripcion": "Este proyecto explora el uso de agentes inteligentes en entornos de rápida evolución y cómo se adaptan a estos cambios.",
+          "enlace": "https://www.fi.uncoma.edu.ar/index.php/proyectos-terminados/411-proyf006/"
+        },
+        {
+          "codigo": "04/E084",
+          "titulo": "Sistemas Multiagentes en Ambientes Dinámicos",
+          "periodo": "2010-2012",
+          "descripcion": "Enfocado en el desarrollo de sistemas multiagentes para resolver problemas complejos en ambientes dinámicos.",
+          "enlace": "https://www.fi.uncoma.edu.ar/index.php/proyectos-terminados/401-proy084/"
+        }
+      ]
+    }
+  }
+  

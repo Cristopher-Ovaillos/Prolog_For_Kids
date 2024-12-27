@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>gilia</title>
   <link rel="stylesheet" href="/assets/css/GILIA/styles.css">
+  <link rel="stylesheet" href="/assets/css/GILIA/content.css">
 </head>
 
 <body>
@@ -20,16 +21,20 @@
 
       <nav>
         <ul>
-          <li class="active" onclick="navigateTo('Bienvenida')">
+          <li class="active" onclick="navigateTo('bienvenida')">
             <a href="#">Bienvenida</a>
           </li>
-          <li onclick="navigateTo('Objetivos')">
+          <li onclick="navigateTo('objetivos')">
             <a href="#">Objetivos</a>
           </li>
-          <li onclick="navigateTo('Vision')">
+          <li onclick="navigateTo('vision')">
             <a href="#">Vision</a>
+            <ul class="content-sidebar">
+              <li><a href="#">Subsección 1.1</a></li>
+              <li><a href="#">Subsección 1.2</a></li>
+            </ul>
           </li>
-          <li onclick="navigateTo('Quienes somos')">
+          <li onclick="navigateTo('quienesSomos')">
             <a href="#">¿Quienes somos?</a>
           </li>
           <li onclick="navigateTo('Materiales')">
@@ -54,10 +59,10 @@
       <div class="header">
         <p>Grupo de Investigación en Lenguajes e Inteligencia Artiﬁcial</p>
         <input type="text" class="search-bar" placeholder="Search...">
-       
+
       </div>
-      <div id="content">
-        <h1>Welcome to the Dashboard</h1>
+      <div class="content" id="content-id">
+       
       </div>
     </div>
   </div>
