@@ -30,7 +30,7 @@ function renderSection(section, data, content) {
       let html = `
         <h2>¿Quiénes Somos?</h2>
         <p>${data.descripcion}</p>
-        <h3>Directores:</h3>
+        <h3 id="director">Directores:</h3>
       `;
       data.directores.forEach(director => {
         html += `
@@ -44,7 +44,7 @@ function renderSection(section, data, content) {
         `;
       });
 
-      html += `<h3>Docentes Investigadores:</h3>`;
+      html += `<h3 id="docInvestigador">Docentes Investigadores:</h3>`;
       data.docentesInvestigadores.forEach(docente => {
         html += `
           <div class="profile-card">
@@ -54,7 +54,29 @@ function renderSection(section, data, content) {
         `;
       });
 
-      html += `<h3>Proyectos:</h3>`;
+
+      html += `<h3 id="becario">Becarios:</h3>`;
+      data.becarios.forEach(becario => {
+        html += `
+          <div class="profile-card">
+            <img src="${becario.avatar || '/assets/images/default-profile.webp'}" alt="${becario.nombre}" />
+            <div class="name">${becario.nombre}</div>
+          </div>
+        `;
+      });
+
+      html += `<h3 id="integrante">Integrantes:</h3>`;
+      data.integrantes.forEach(integrante => {
+        html += `
+          <div class="profile-card">
+            <img src="${integrante.avatar || '/assets/images/default-profile.webp'}" alt="${integrante.nombre}" />
+            <div class="name">${integrante.nombre}</div>
+          </div>
+        `;
+      });
+
+
+      html += `<h3 id="proyecto">Proyectos:</h3>`;
       data.proyectos.forEach(proyecto => {
         html += `
           <div class="project-card">

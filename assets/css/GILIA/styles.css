@@ -10,6 +10,7 @@
 }
 
 body {
+    overflow: hidden; /* Evitar la barra de desplazamiento global */
     margin: 0;
     font-family: "Josefin Sans", serif;
     background-color: #f9f9f9;
@@ -121,39 +122,93 @@ nav ul ul li a:hover {
     padding-left: 30px;
 }
 
-
 .main-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     background-color: #e2e0e0;
     transition: all 0.3s ease-in-out;
-}
-
-.header {
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-}
-
-.search-bar {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    width: 400px;
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.search-bar:focus {
+    width: 100%;
+    position: relative; 
+  }
+  
+  .header img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: relative;
+    height: auto;
+    margin-right: 40px;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: relative;
+    height: auto;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     outline: none;
-    box-shadow: 0 0 5px var(--color-2);
-    border-color: var(--color-2);
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .search-bar:focus {
+    border-color: #007bff;
+  }
+  
+  #result-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: none;
 }
 
+#result-list li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-
+#result-list li:hover {
+    background-color: #e9e9e9;
+}

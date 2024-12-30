@@ -13,7 +13,7 @@
   <div class="gilia">
     <div class="sidebar">
       <div class="logo-container">
-        <img src="/assets/images/logo_IAV2.webp" alt="Logo" class="logo">
+        <img src="/assets/images/Lg_gilia.webp" alt="Logo" class="logo">
         <p class="logo-text">GILIA</p>
 
       </div>
@@ -36,6 +36,13 @@
           </li>
           <li onclick="navigateTo('quienesSomos')">
             <a href="#">¿Quienes somos?</a>
+            <ul class="content-sidebar">
+              <li><a href="#director">Directores</a></li>
+              <li><a href="#docInvestigador">Docentes Investigadores</a></li>
+              <li><a href="#becario">Becarios</a></li>
+              <li><a href="#integrante">Integrantes</a></li>
+              <li><a href="#proyecto">Proyectos</a></li>
+            </ul>
           </li>
           <li onclick="navigateTo('Materiales')">
             <a href="#">Materiales</a>
@@ -54,20 +61,26 @@
       </nav>
 
     </div>
-
     <div class="main-content">
       <div class="header">
-        <p>Grupo de Investigación en Lenguajes e Inteligencia Artiﬁcial</p>
-        <input type="text" class="search-bar" placeholder="Search...">
-
+        <img src="/assets/images/Escudo_Universidad_Nacional_del_Comahue.svg" alt="logo-unco">
+        <div class="search-container">
+          <input type="text" class="search-bar" placeholder="Buscar..." id="search-bar">
+          <ul id="result-list" class="results-list"></ul>
+        </div>
+        
       </div>
-      <div class="content" id="content-id">
-       
-      </div>
+      <div class="content" id="content-id"></div>
     </div>
+    
+
+    
+    
+
   </div>
+  <script src="/assets/js/GILIA/search.js"></script>
   <script src="/assets/js/GILIA/script.js"></script>
-  
+
 </body>
 
 </html>
